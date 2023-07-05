@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5690/5690573.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <a href="/" class="movie-logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/5690/5690573.png" alt="movie-icon">
+            <h1>Movie Home</h1>
+        </a>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search movies...">
+            <button type="button" id="search-button" onclick="searchMovies()">Search</button>
+        </div>
+
+        <div class="container" id="movie-cards"></div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-poster" src="" alt="movie">
+                <div class="movie-content">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-release-date"></p>
+                    <p id="modal-genre"></p>
+                    <p id="modal-language"></p>
+                    <p id="modal-rating"></p>
+                    <p id="modal-overview"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer>Made by <a href="https://t.me/borin_morm">&nbsp;More Borin</a></footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
